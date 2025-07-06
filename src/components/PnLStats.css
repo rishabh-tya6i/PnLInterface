@@ -1,0 +1,100 @@
+.pnl-stats-container {
+  width: 90%;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  font-family: 'Raleway', sans-serif;
+}
+
+.pnl-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.pnl-card {
+  flex: 1;
+  min-width: 180px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pnl-card.positive {
+  color: #00b300;
+  background-color: rgba(0, 200, 0, 0.08);
+  border-color: #00b300;
+}
+
+.pnl-card.negative {
+  color: #e60000;
+  background-color: rgba(255, 0, 0, 0.08);
+  border-color: #e60000;
+}
+
+.win-ratio {
+  margin-top: 20px;
+}
+
+.win-ratio p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 28px;
+  background-color: var(--progress-bg);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(to right, #00ff88, #00cc66);
+  color: #000;
+  font-weight: 700;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  transition: width 0.6s ease-in-out;
+}
+
+/* Label outside (optional) */
+.progress-bar::after {
+  content: attr(data-percent);
+  position: absolute;
+  right: 12px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+/* Theme support */
+body.light {
+  --card-bg: #fdfdfd;
+  --text-primary: #222;
+  --progress-bg: #f0f0f0;
+}
+
+body.dark {
+  --card-bg: #121212;
+  --text-primary: #f0f0f0;
+  --progress-bg: #1f1f1f;
+}

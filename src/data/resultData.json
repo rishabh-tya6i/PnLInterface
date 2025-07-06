@@ -1,0 +1,28 @@
+[
+  {
+    "number": 1,
+    "info": "Info A",
+    "enable": "Yes",
+    "status": "Active",
+    "clientid": "CID001",
+    "algo": "AlgoX",
+    "mtm": 1200,
+    "alert": "None",
+    "duration": "30m",
+    "buy": "Buy",
+    "mult": "2x"
+  },
+  {
+    "number": 2,
+    "info": "Info B",
+    "enable": "No",
+    "status": "Inactive",
+    "clientid": "CID002",
+    "algo": "AlgoY",
+    "mtm": -500,
+    "alert": "Warning",
+    "duration": "45m",
+    "buy": "Sell",
+    "mult": "1x"
+  }
+]

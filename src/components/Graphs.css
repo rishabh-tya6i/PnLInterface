@@ -1,0 +1,60 @@
+/* Light mode default */
+.stock-chart-container {
+  width: 100%;
+  max-width: 960px;
+  height: 420px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.stock-chart-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Tooltip light mode */
+.recharts-tooltip-wrapper {
+  color: #222;
+}
+
+/* Dark mode support */
+body.dark .stock-chart-container {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .stock-chart-title {
+  color: #f0f0f0;
+}
+
+body.dark .chart-axis text {
+  fill: #ccc !important;
+}
+
+body.dark .recharts-tooltip-wrapper {
+  color: #eee;
+  background-color: #333;
+  border: 1px solid #555;
+}
+
+body.dark .chart-grid line {
+  stroke: #444 !important;
+}
+
+.stock-tooltip {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+body.dark .stock-tooltip {
+  background: #222;
+  border: 1px solid #555;
+  color: #eee;
+}

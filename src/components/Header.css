@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-bottom: #FFEFD3 1px solid;
+    height: 10vh;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #272635;
+    color: #E8E9F3;
+}
+
+.header button {
+    font-size: 16px;
+    width: 100px;
+    margin: 0;
+    background-color: transparent;
+    color: #E8E9F3;
+    border: none;
+    cursor: pointer;
+}
+
+.header h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 14px;
+    margin: 0;
+    color: greenyellow;
+}
+
+.user {
+    margin: 10px 20px 10px 20px;
+    width: 150px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user button {
+    margin: 10px 20px 10px 10px;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}

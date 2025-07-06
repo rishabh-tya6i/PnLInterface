@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Selector {
+  width: 100%;
+  margin: 20px auto;
+  padding: 16px 24px;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Theme specific heading color */
+body.light h1 {
+  color: #294C60;
+}
+
+body.dark h1 {
+  color: #D3E4F0;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+/* Layout */
+.Container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Inputs & Selects */
+.Container select,
+.Container input,
+.Container .in {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid;
+  transition: all 0.3s ease;
+}
+
+/* Theme-aware Inputs */
+body.light .Container select,
+body.light .Container input,
+body.light .Container .in {
+  background-color: #fff;
+  color: #333;
+  border-color: #ccc;
+}
+
+body.dark .Container select,
+body.dark .Container input,
+body.dark .Container .in {
+  background-color: #1f1f1f;
+  color: #e4e4e4;
+  border-color: #444;
+}
+
+/* Placeholder styling */
+.Container input::placeholder {
+  color: #999;
+  font-size: 13px;
+}
+
+/* Buttons */
+.Container button {
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Comfortaa", sans-serif;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme buttons */
+body.light .Container button {
+  background-color: #272635;
+  color: #E8E9F3;
+}
+
+body.light .Container button:hover {
+  background-color: #3A3B4D;
+  color: #FFFFFF;
+}
+
+/* Dark theme buttons */
+body.dark .Container button {
+  background-color: #f0f0f0;
+  color: #1f1f1f;
+}
+
+body.dark .Container button:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Total PNL dynamic button override handled via inline style */
+
+/* Search button */
+.Container .search {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+}
+
+.Container .search:hover {
+  background-color: #005fcc;
+}
+
+/* Download button */
+.Container .download {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.Container .download:hover {
+  background-color: #218838;
+}
+
+/* Responsive support (optional) */
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
