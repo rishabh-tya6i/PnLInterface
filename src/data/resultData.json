@@ -24,5 +24,57 @@
     "duration": "45m",
     "buy": "Sell",
     "mult": "1x"
+  },
+  {
+    "number": 3,
+    "info": "Info C",
+    "enable": "No",
+    "status": "Inactive",
+    "clientid": "CID002",
+    "algo": "AlgoY",
+    "mtm": -500,
+    "alert": "Warning",
+    "duration": "45m",
+    "buy": "Sell",
+    "mult": "1x"
+  },
+  {
+    "number": 4,
+    "info": "Info D",
+    "enable": "No",
+    "status": "Inactive",
+    "clientid": "CID002",
+    "algo": "AlgoY",
+    "mtm": -500,
+    "alert": "Warning",
+    "duration": "45m",
+    "buy": "Sell",
+    "mult": "1x"
+  },
+  {
+    "number": 5,
+    "info": "Info E",
+    "enable": "No",
+    "status": "Inactive",
+    "clientid": "CID002",
+    "algo": "AlgoY",
+    "mtm": -500,
+    "alert": "Warning",
+    "duration": "45m",
+    "buy": "Sell",
+    "mult": "1x"
+  },
+  {
+    "number": 6,
+    "info": "Info F",
+    "enable": "No",
+    "status": "Inactive",
+    "clientid": "CID002",
+    "algo": "AlgoY",
+    "mtm": -500,
+    "alert": "Warning",
+    "duration": "45m",
+    "buy": "Sell",
+    "mult": "1x"
   }
 ]
